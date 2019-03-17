@@ -1,0 +1,95 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <image class='invitation' src='/images/invitation.jpg' mode='aspectFill'></image>
+  
+  <map
+    id="map"
+    longitude="117.2078683"
+    latitude="39.1295535"
+    scale="14"
+    markers="{{markers}}"
+    bindmarkertap="markertap"
+    show-location
+    style="width: 740rpx; height: 400rpx;"
+  ></map>
+
+  <view class="drawer_screen" bindtap="setModalStatus" data-status="0" wx:if="{{showModalStatus}}"></view>
+  <view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">
+    <view class="close_icon" bindtap="setModalStatus" data-status="0">×</view>
+    <view class="drawer_attr_content">
+      <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="page__hd">
+          <view class="page__title">我要参加</view>
+        </view>
+        <view class="page__hd">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__hd">
+                <image class='icon' src='/images/icon/name.png'></image>
+                <view class="weui-label">姓名</view>
+              </view>
+              <view class="weui-cell__bd">
+                <input class="weui-input" placeholder="请输入名字" name="name"/>
+              </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__hd">
+                <image class='icon' src='/images/icon/contact.png'></image>
+                <view class="weui-label">联系方式</view>
+              </view>
+              <view class="weui-cell__bd">
+                <input class="weui-input" placeholder="联系方式（选填）" name="contact"/>
+              </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__hd">
+                <image class='icon' src='/images/icon/number.png'></image>
+                <view class="weui-label">人数</view>
+              </view>
+              <view class="weui-cell__bd">
+                <view class="page__bd page__bd_spacing">
+                  <slider show-value value="1" name="number" max="10" min="1" block-size="14"  />
+                </view>
+              </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__hd">
+                <image class='icon' src='/images/icon/seat.png'></image>
+                <view class="weui-label">座位安排</view>
+              </view>
+              <view class="weui-cell__bd">
+                <radio-group name="radio-group">
+                  <label class="weui-cell weui-check__label">
+                    <radio value="男方" color='pink'/>男方
+                  </label>
+                  <label class="weui-cell weui-check__label">
+                    <radio value="女方" color='pink'/>女方
+                  </label>
+                </radio-group>
+              </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__hd">
+                <image class='icon' src='/images/icon/note.png'></image>
+                <view class="weui-label">备注</view>
+              </view>
+              <view class="weui-cell__bd">
+                <view class="page__bd page__bd_spacing">
+                  <input class="weui-input" placeholder="备注" name="note"/>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="btn-area">
+          <button class="weui-btn" formType="submit" plain="true">提交</button>
+        </view>
+      </form>
+    </view>
+  </view>
+  <view class="btn" bindtap="setModalStatus" data-status="1">
+    <image src='{{avatarUrl}}' class="userinfo-avatar"></image>
+    <text class='inv-text'>告诉我们你是否来参加吧！</text>
+  </view>
+
+  <button class="weui-btn btn-fix" type="primary">联系我们</button>
+</view>

@@ -1,0 +1,7 @@
+<view>
+  <view wx:for="{{list}}" wx:key="id" data-src="{{item.url}}" catchtap='viewImg'>
+    <view class="img_box" style="top:{{item.top}}px;left:{{item.left}}px">
+      <image src="{{item.url}}" mode="widthFix" bindload="loadImage" data-index="{{index}}"></image>
+    </view>
+  </view>
+</view>

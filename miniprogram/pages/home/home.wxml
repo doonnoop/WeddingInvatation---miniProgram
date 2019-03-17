@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="img_box" bindtouchend="next3">
+    <span class="change_icon">
+      <image src="../../images/icon/arrow.png"></image>
+    </span>
+    <image animation="{{animationData3}}" src="{{activePic3}}" mode="aspectFill"></image>
+  </view>
+</view>

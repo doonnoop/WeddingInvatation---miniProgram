@@ -1,0 +1,110 @@
+
+.invitation {
+  width: 740rpx;
+  height: 480rpx;
+  margin-left: 5rpx;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  width: 98%;
+  margin: 40rpx auto;
+  border-radius: 10rpx;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #f7f5f5;
+}
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+}
+.userinfo-avatar:after {
+  border: none;
+}
+.inv-text {
+  color: #f6dd91;
+}
+
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+
+.drawer_attr_box {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+}
+
+.close_icon {
+  width: 25rpx;
+  height: 25rpx;
+  line-height: 20rpx;
+  font-size: 30rpx;
+  position: absolute;
+  right: 10rpx;
+  top:10rpx;
+  padding: 10rpx;
+  color: #ccc;
+  border: 1rpx solid #ccc;
+  border-radius: 50%;
+  text-align: center;
+  background: #fff;
+}
+
+.drawer_attr_content {
+  padding: 40rpx;
+  height: 760rpx;
+  overflow-y: scroll;
+}
+
+.page__title {
+  margin-bottom: 40rpx;
+  border-left: 3px solid pink;
+  padding-left: 20rpx;
+}
+.btn-area {
+  margin: 40rpx auto;
+  width: 60%;
+}
+button[plain] {
+  color:pink;
+  border:1px solid pink;
+}
+.icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+.weui-cell__hd {
+  display: flex;
+  align-items: center
+}
+
+map {
+  margin-left: 5rpx;
+}
+
+.btn-fix {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+

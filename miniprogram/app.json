@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/photos/photos",
+    "pages/reserve/reserve"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "婚礼请柬",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/tab/index.png",
+        "selectedIconPath": "images/tab/index-select.png"
+      },
+      {
+        "pagePath": "pages/photos/photos",
+        "text": "照片",
+        "iconPath": "images/tab/photo.png",
+        "selectedIconPath": "images/tab/photo-select.png"
+      },
+      {
+        "pagePath": "pages/reserve/reserve",
+        "text": "预约",
+        "iconPath": "images/tab/reserve.png",
+        "selectedIconPath": "images/tab/reserve-select.png"
+      }
+    ]
+  }
+}
