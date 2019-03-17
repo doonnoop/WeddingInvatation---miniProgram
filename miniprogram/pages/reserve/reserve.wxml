@@ -87,9 +87,12 @@
     scale="14"
     markers="{{markers}}"
     bindmarkertap="markertap"
+    bindtap='markertap'
     show-location
     style="width: 740rpx; height: 400rpx;"
-  ></map>
+    wx:if="{{!showModalStatus}}"
+  >
+  </map>
 
   <button class="weui-btn btn-fix" type="primary">联系我们</button>
 </view>

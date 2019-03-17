@@ -100,7 +100,9 @@ button[plain] {
 
 map {
   margin-left: 5rpx;
-  z-index: -9999;
+}
+cover-view {
+  z-index: -1000;
 }
 
 .btn-fix {
