@@ -90,7 +90,7 @@ Page({
     } else {
       wx.showToast({
         title: '告诉我你是谁',
-        image: '/images/icon/xx.png',
+        image: '/images/icon/wrong.png',
         duration: 1000
       });
     }
