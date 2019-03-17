@@ -18,17 +18,15 @@ Page({
       width: 40,
       height: 40
     }],
-    controls: [{
-      id: 1,
-      iconPath: '/images/location.png',
-      position: {
-        left: 0,
-        top: 300 - 50,
-        width: 50,
-        height: 50
-      },
-      clickable: true
-    }]
+    flag: true
+  },
+
+  show: function () {
+    this.setData({ flag: false })
+  },
+
+  hide: function () {
+    this.setData({ flag: true })
   },
 
   markertap(e) {
