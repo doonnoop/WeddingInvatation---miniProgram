@@ -1,17 +1,6 @@
 <view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
   <image class='invitation' src='/images/invitation.jpg' mode='aspectFill'></image>
   
-  <map
-    id="map"
-    longitude="117.2078683"
-    latitude="39.1295535"
-    scale="14"
-    markers="{{markers}}"
-    bindmarkertap="markertap"
-    show-location
-    style="width: 740rpx; height: 400rpx;"
-  ></map>
-
   <view class="drawer_screen" bindtap="setModalStatus" data-status="0" wx:if="{{showModalStatus}}"></view>
   <view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">
     <view class="close_icon" bindtap="setModalStatus" data-status="0">×</view>
@@ -90,6 +79,17 @@
     <image src='{{avatarUrl}}' class="userinfo-avatar"></image>
     <text class='inv-text'>告诉我们你是否来参加吧！</text>
   </view>
+
+  <map
+    id="map"
+    longitude="117.2078683"
+    latitude="39.1295535"
+    scale="14"
+    markers="{{markers}}"
+    bindmarkertap="markertap"
+    show-location
+    style="width: 740rpx; height: 400rpx;"
+  ></map>
 
   <button class="weui-btn btn-fix" type="primary">联系我们</button>
 </view>
