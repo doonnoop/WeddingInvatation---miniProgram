@@ -1,0 +1,2 @@
+<!--pages/testme/testme.wxml-->
+<text>已收到{{congratCounts}}次祝福</text>
