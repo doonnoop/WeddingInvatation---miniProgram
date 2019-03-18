@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/home/home",
     "pages/photos/photos",
+    "pages/testme/testme",
     "pages/reserve/reserve"
   ],
   "window": {
