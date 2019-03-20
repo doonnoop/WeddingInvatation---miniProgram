@@ -1,3 +1,5 @@
+<import src="../template/audioPause/audioPause-template.wxml" />
+<template is="audioPauseTemplate" />
 <view class="container">
   <image class="invitation" src='../../images/index.jpg' mode='aspectFill'></image>
   <image class='card' src='../../images/card.png' bindtap='onBindTap' wx:if="{{!endShake}}"></image>

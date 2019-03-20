@@ -5,11 +5,12 @@
     "pages/photos/photos",
     "pages/reserve/reserve"
   ],
+  "requiredBackgroundModes": ["audio"],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#f78888",
-    "navigationBarTitleText": "婚礼请柬",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#dc9fb7",
+    "navigationBarTitleText": "我的婚礼你来吗",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#7A7E83",

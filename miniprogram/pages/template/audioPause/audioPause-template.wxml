@@ -1,0 +1,3 @@
+<template name="audioPauseTemplate">
+    <image class="music" src='/images/icon/music.png' catchtap='pauseMusic'></image>
+</template>

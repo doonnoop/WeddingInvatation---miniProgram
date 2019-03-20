@@ -1,4 +1,4 @@
-// pages/reserve/reserve.js
+const app = getApp();
 Page({
 
   /**
@@ -19,6 +19,15 @@ Page({
       height: 40
     }],
     flag: true
+  },
+
+  pauseMusic: function (event) {
+    app.globalData.musicPlaying = !app.globalData.musicPlaying;
+    if (app.globalData.musicPlaying) {
+      app.globalData.audio.play();
+    } else {
+      app.globalData.audio.pause();
+    }
   },
 
   show: function () {

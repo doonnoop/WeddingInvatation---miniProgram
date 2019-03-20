@@ -1,0 +1,17 @@
+.music {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top:80rpx;
+  right: 80rpx;
+  z-index: 2;
+  animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

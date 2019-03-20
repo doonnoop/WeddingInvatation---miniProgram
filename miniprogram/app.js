@@ -1,5 +1,8 @@
-//app.js
 App({
+  globalData: {
+    musicPlaying: true,
+    audio: wx.createInnerAudioContext()
+  },
   onLaunch: function () {
     
     if (!wx.cloud) {
@@ -8,8 +11,12 @@ App({
       wx.cloud.init({
         traceUser: true,
       })
-    }
+    };
 
-    this.globalData = {}
-  }
+    this.globalData.audio = wx.createInnerAudioContext();
+    console.log(this.globalData.audio);
+    this.globalData.audio.src = 'cloud://testarea-3ecb6a.7465-testarea-3ecb6a/4091306434.mp3';
+    console.log(this.globalData.audio.src);
+    this.globalData.audio.play();
+  },
 })

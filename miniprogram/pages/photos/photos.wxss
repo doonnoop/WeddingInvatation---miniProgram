@@ -1,5 +1,4 @@
-/* pages/photos/photos.wxss *//* pages/others/waterfall/waterfall.wxss */
-
+@import "../template/audioPause/audioPause-template.wxss";
 Page {
   background: #fff;
 }

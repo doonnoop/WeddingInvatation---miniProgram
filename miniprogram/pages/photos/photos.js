@@ -1,4 +1,5 @@
 var imgList = require('data.js');
+const app = getApp();
 Page({
   data: {
     imgList: [],
@@ -29,6 +30,15 @@ Page({
     this.setData({
       list: arr
     })
+  },
+
+  pauseMusic: function (event) {
+    app.globalData.musicPlaying = !app.globalData.musicPlaying;
+    if (app.globalData.musicPlaying) {
+      app.globalData.audio.play();
+    } else {
+      app.globalData.audio.pause();
+    }
   },
 
   loadImage: function (e) {

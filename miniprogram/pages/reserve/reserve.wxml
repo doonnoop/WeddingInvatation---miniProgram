@@ -1,3 +1,5 @@
+<import src="../template/audioPause/audioPause-template.wxml" />
+<template is="audioPauseTemplate" />
 <view class="container" xmlns:wx="http://www.w3.org/1999/xhtml">
   <image class='invitation' src='/images/bac.jpg' mode='aspectFill'></image>
   

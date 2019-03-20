@@ -1,3 +1,8 @@
+@import "../template/audioPause/audioPause-template.wxss";
+.music {
+  top: 40rpx;
+  right: 40rpx;
+}
 .container {
   display: flex;
   flex-direction: column;

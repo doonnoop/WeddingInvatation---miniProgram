@@ -1,5 +1,5 @@
-//index.js
-const app = getApp()
+const app = getApp();
+
 Page({
   data: {
     lastTime: 0, //此变量用来记录上次摇动的时间
@@ -8,6 +8,15 @@ Page({
     lastZ: 0, //此组变量分别记录对应 x、y、z 三轴的数值和上次的数值
     shakeSpeed: 110, //设置阈值
     endShake: false
+  },
+
+  pauseMusic: function (event) {
+    app.globalData.musicPlaying = !app.globalData.musicPlaying;
+    if (app.globalData.musicPlaying) {
+      app.globalData.audio.play();
+    } else {
+      app.globalData.audio.pause();
+    }
   },
 
   onBindTap: function() {
