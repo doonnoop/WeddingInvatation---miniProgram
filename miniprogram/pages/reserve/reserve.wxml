@@ -1,5 +1,5 @@
-<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
-  <image class='invitation' src='/images/invitation.jpg' mode='aspectFill'></image>
+<view class="container" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <image class='invitation' src='/images/bac.jpg' mode='aspectFill'></image>
   
   <view class="drawer_screen" bindtap="setModalStatus" data-status="0" wx:if="{{showModalStatus}}"></view>
   <view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">
@@ -75,10 +75,10 @@
       </form>
     </view>
   </view>
-  <view class="btn" bindtap="setModalStatus" data-status="1">
+  <button class="btn" bindtap="setModalStatus" data-status="1">
     <image src='{{avatarUrl}}' class="userinfo-avatar"></image>
     <text class='inv-text'>告诉我们你是否来参加吧！</text>
-  </view>
+  </button>
 
   <map
     id="map"
@@ -95,12 +95,12 @@
   >
   </map>
   
-  <button class="weui-btn btn-fix" type="primary" bindtap="show">联系我们</button>
+  <button class="weui-btn btn-fix" bindtap="show">联系我们</button>
   <view class="modal-box" hidden="{{flag}}" bindtap="hide">
     <view class="modal-body">
       <image src='/images/card.png'></image>
       <view class="modal-content">
-        <button class="knowBtn" bindtap="hide" style='margin:100rpx auto'>关闭</button>
+        <button class="knowBtn" bindtap="hide" style='margin:100rpx auto'>关闭    </button>
       </view>
     </view>
   </view>

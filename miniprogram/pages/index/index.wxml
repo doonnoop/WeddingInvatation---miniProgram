@@ -1,4 +1,5 @@
 <view class="container">
   <image class="invitation" src='../../images/index.jpg' mode='aspectFill'></image>
-  <image class='card' src='../../images/card.png' bindtap='onBindTap'></image>
+  <image class='card' src='../../images/card.png' bindtap='onBindTap' wx:if="{{!endShake}}"></image>
+  <image class='card-end' src='../../images/card.png' wx:if="{{endShake}}"></image>
 </view>

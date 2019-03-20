@@ -1,4 +1,4 @@
-// pages/home/home.js
+var time = require('../../utils/time.js');   
 Page({
 
   /**
@@ -20,7 +20,14 @@ Page({
       {
         url: '/images/index.jpg'
       }
-    ]
+    ],
+    timerNumber: 0,
+  },
+
+  getCurrentCongrat: function () {
+    var now = new Date();
+
+    return time.unionSqureTime(now);
   },
 
   next3: function () {
@@ -101,7 +108,14 @@ Page({
       imgs3: this.data.imgs,
       activePic3: this.data.activePic,
       activeIndex3: this.data.activeIndex,
-    })
+    });
+    this.getCurrentCongrat();
+
+    this.timerNumber = setInterval(() => {
+      this.setData({
+        congratCounts: this.getCurrentCongrat()
+      });
+    }, 100);
   },
 
   /**

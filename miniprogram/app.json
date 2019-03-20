@@ -3,12 +3,11 @@
     "pages/index/index",
     "pages/home/home",
     "pages/photos/photos",
-    "pages/testme/testme",
     "pages/reserve/reserve"
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarBackgroundColor": "#f78888",
     "navigationBarTitleText": "婚礼请柬",
     "navigationBarTextStyle": "black"
   },

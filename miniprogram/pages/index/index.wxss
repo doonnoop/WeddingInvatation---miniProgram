@@ -1,3 +1,6 @@
+page{
+  background-color: #f9f7f9;
+}
 .container {
   width: 700rpx;
   height: 100%;
@@ -6,26 +9,34 @@
 .invitation {
   width: 100%;
   height: 1245rpx;
-  animation: scale 4s linear infinite;
+  animation: scale 3s linear infinite;
 }
 @keyframes scale {
   0% {
-    transform: scale(.99);
+    transform: scale(.95);
   }
   50% {
     transform: scale(1);
   }
   100% {
-    transform: scale(.99);
+    transform: scale(.95);
   }
 }
 .card {
-  width: 200rpx;
-  height: 200rpx;
+  width: 300rpx;
+  height: 300rpx;
   position: relative;
   top: -680rpx;
   z-index: 1;
   animation: move 2s ease;
+}
+.card-end {
+  width: 300rpx;
+  height: 300rpx;
+  position: relative;
+  top: -680rpx;
+  z-index: 1;
+  animation: move-back 2s ease;
 }
 @keyframes move {
   from   {  
@@ -33,5 +44,13 @@
   }
   to {
     top: -680rpx;
+  }
+}
+@keyframes move-back {
+  from   {  
+    top: -680rpx;
+  }
+  to {
+    top: -1680rpx;
   }
 }

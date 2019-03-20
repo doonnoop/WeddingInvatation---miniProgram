@@ -1,43 +1,10 @@
+var imgList = require('data.js');
 Page({
   data: {
-    imgList: [
-      {
-        url: 'cloud://testarea-3ecb6a.7465-testarea-3ecb6a/photos/12摆台BI3I2930.JPG',
-      },
-      {
-        url: 'cloud://testarea-3ecb6a.7465-testarea-3ecb6a/photos/12摆台BI3I3011.JPG',
-      },
-      {
-        url: 'cloud://testarea-3ecb6a.7465-testarea-3ecb6a/photos/12摆台BI3I3070.JPG',
-      },
-      {
-        url: 'cloud://testarea-3ecb6a.7465-testarea-3ecb6a/photos/12摆台BI3I3098.JPG',
-      },
-      {
-        url: 'cloud://testarea-3ecb6a.7465-testarea-3ecb6a/photos/12面BI3I3160.JPG',
-      },
-      {
-        url: 'cloud://testarea-3ecb6a.7465-testarea-3ecb6a/photos/16面BI3I3038.JPG',
-      },
-      {
-        url: 'cloud://testarea-3ecb6a.7465-testarea-3ecb6a/photos/18面BI3I2901.JPG',
-      },
-      {
-        url: 'cloud://testarea-3ecb6a.7465-testarea-3ecb6a/photos/BI3I2879.JPG',
-      },
-      {
-        url: 'cloud://testarea-3ecb6a.7465-testarea-3ecb6a/photos/BI3I2884.JPG',
-      },
-      {
-        url: 'cloud://testarea-3ecb6a.7465-testarea-3ecb6a/photos/BI3I2886.JPG',
-      },
-      {
-        url: 'cloud://testarea-3ecb6a.7465-testarea-3ecb6a/photos/BI3I2888.JPG',
-      },
-    ],
+    imgList: [],
     leftHeight: 0,
     rightHeight: 0,
-    length: 7,
+    length: 20,
     pageNo: 1,
     descHeight: 30,
     list: []
@@ -47,15 +14,15 @@ Page({
     wx.showToast({
       title: '正在加载',
       icon: 'loading',
-      duration: 2000
+      duration: 3000
     });
   },
 
   randomImg: function() {
     let set = new Set();
-    while (set.size < 7) {
-      var tmp = Math.round(10 * Math.random())
-      set.add(this.data.imgList[tmp]);
+    while (set.size < 20) {
+      var tmp = Math.round(157 * Math.random())
+      set.add(imgList.imgList[tmp]);
     }
     let arr = Array.from(set);
     console.log(arr);

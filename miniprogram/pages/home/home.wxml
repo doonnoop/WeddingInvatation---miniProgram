@@ -1,4 +1,9 @@
 <view class="container">
+  <view class='box'>
+    <text class='wish'>已收到</text>
+    <text class='number'>{{congratCounts}}</text>
+    <text class='wish'>次祝福</text>
+  </view>
   <view class="img_box" bindtouchend="next3">
     <span class="change_icon">
       <image src="../../images/icon/arrow.png"></image>
